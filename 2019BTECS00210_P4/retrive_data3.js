@@ -3,7 +3,7 @@ const mysql = require("mysql");
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Kiran1234",
+  password: "kiran7709",
   database: "awamad",
 });
 
@@ -14,7 +14,7 @@ connection.connect((err) => {
   }
   console.log("Connected!");
   const statement =
-    "SELECT club_name, club_count FROM Club WHERE club_name = 'PACE'";
+    "SELECT club_name, club_lead FROM Club WHERE club_count = 3";
   connection.query(statement, (err, res) => {
     if (err) {
       console.error(err);
@@ -25,7 +25,7 @@ connection.connect((err) => {
     console.log("|  club Name  |  club Count |");
     console.log("- - - - - - - - - - - - - - - - ");
     data.map((row) => {
-      console.log(`|  ${row.club_name}  |    ${row.club_count}   |`);
+      console.log(`|  ${row.club_name}  |    ${row.club_lead}   |`);
       console.log("- - - - - - - - - - - - - - -");
     });
   });

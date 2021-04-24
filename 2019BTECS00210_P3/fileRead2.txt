@@ -1,0 +1,9 @@
+Problem Statement 1:
+1. With the help of suitable examples use following Node.js pre-built modules in Node.js
+Application.
+a. File System Module (fs)
+b. Secure HTTP Module (https)
+c. Nodemailer Module (nodemailer)
+i. Install this module from npm
+Problem Statement 2:
+1. Create a user defined module and use it in Node.js Application that uses HTTP server.
