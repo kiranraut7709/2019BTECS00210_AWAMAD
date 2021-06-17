@@ -1,0 +1,467 @@
+<html>
+    <head>
+        <title>Course Feedback Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <h1 class="text-center">Course Feedback Form</h1>
+        <br>
+        <form class="form-horizontal"  role="form" action="/addData" method="post">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">
+                    Name:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="name" type="text" name="name" required placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="address">
+                    Address:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="address" type="text" name="address" required placeholder="Enter address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">
+                    E-mail:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="email" type="text" name="email" required placeholder="Enter E-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="phoneNo">
+                    Phone No:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="phoneNo" type="text" name="phoneNo" required placeholder="Enter E-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q1">
+                    The contents, references to good text/reference books, and lesson plan were adequately explained by the teacher prior to starting the course.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Not selected" required>
+                        <label class="form-check-label" for="q1">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q1">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Disagree" required>
+                        <label class="form-check-label" for="q1">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Neutral" required>
+                        <label class="form-check-label" for="q1">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Agree" required>
+                        <label class="form-check-label" for="q1">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1" value="Strongly agree" required>
+                        <label class="form-check-label" for="q1">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q2">
+                    The course outcomes and their relevance to programme outcomes were clearly explained.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Not selected" required>
+                        <label class="form-check-label" for="q2">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q2">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Disagree" required>
+                        <label class="form-check-label" for="q2">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Neutral" required>
+                        <label class="form-check-label" for="q2">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Agree" required>
+                        <label class="form-check-label" for="q2">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" id="q2" value="Strongly agree" required>
+                        <label class="form-check-label" for="q2">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q3">
+                    The teacher conducted the classes regularly and completed the syllabus in all respects for the course within the stipulated time.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Not selected" required>
+                        <label class="form-check-label" for="q3">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q3">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Disagree" required>
+                        <label class="form-check-label" for="q3">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Neutral" required>
+                        <label class="form-check-label" for="q3">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Agree" required>
+                        <label class="form-check-label" for="q3">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3" value="Strongly agree" required>
+                        <label class="form-check-label" for="q3">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q4">
+                    The teacher organized his lectures with clear and effective communication, orally/on black board and occasionally used ppts/videos for clarifying concepts.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Not selected" required>
+                        <label class="form-check-label" for="q4">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q4">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Disagree" required>
+                        <label class="form-check-label" for="q4">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Neutral" required>
+                        <label class="form-check-label" for="q4">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Agree" required>
+                        <label class="form-check-label" for="q4">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4" value="Strongly agree" required>
+                        <label class="form-check-label" for="q4">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q5">
+                    The teacher conducted assignment/oral/seminar/test (surprise/declared/quiz)/group discussion and used innovative methods during evaluation, assessed regularly and continuously as part of In semester Evaluation (ISE)
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Not selected" required>
+                        <label class="form-check-label" for="q5">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q5">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Disagree" required>
+                        <label class="form-check-label" for="q5">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Neutral" required>
+                        <label class="form-check-label" for="q5">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Agree" required>
+                        <label class="form-check-label" for="q5">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" id="q5" value="Strongly agree" required>
+                        <label class="form-check-label" for="q5">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q6">
+                    The teacher was prompt in replying your queries and clarified your doubts within/outside the classroom.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Not selected" required>
+                        <label class="form-check-label" for="q6">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q6">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Disagree" required>
+                        <label class="form-check-label" for="q6">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Neutral" required>
+                        <label class="form-check-label" for="q6">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Agree" required>
+                        <label class="form-check-label" for="q6">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6" value="Strongly agree" required>
+                        <label class="form-check-label" for="q6">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q7">
+                    The attendance was taken properly, recorded and updated on moodle regularly.
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Not selected" required>
+                        <label class="form-check-label" for="q7">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q7">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Disagree" required>
+                        <label class="form-check-label" for="q7">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Neutral" required>
+                        <label class="form-check-label" for="q7">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Agree" required>
+                        <label class="form-check-label" for="q7">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" id="q7" value="Strongly agree" required>
+                        <label class="form-check-label" for="q7">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q8">
+                    The course teacher guided you about higher education/career planning/job opportunities /entrepreneurship / other sources of information (NPTEL, MOOC Webinar Edx courses etc)
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Not selected" required>
+                        <label class="form-check-label" for="q8">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q8">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Disagree" required>
+                        <label class="form-check-label" for="q8">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Neutral" required>
+                        <label class="form-check-label" for="q8">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Agree" required>
+                        <label class="form-check-label" for="q8">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8" value="Strongly agree" required>
+                        <label class="form-check-label" for="q8">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="q9">
+                    How do you evaluate the overall performance of the course teacher?
+                </label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Not selected" required>
+                        <label class="form-check-label" for="q9">
+                            Not selected
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Strongly Disagree" required>
+                        <label class="form-check-label" for="q9">
+                            Strongly Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Disagree" required>
+                        <label class="form-check-label" for="q9">
+                            Disagree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Neutral" required>
+                        <label class="form-check-label" for="q9">
+                            Neutral
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Agree" required>
+                        <label class="form-check-label" for="q9">
+                            Agree
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9" value="Strongly agree" required>
+                        <label class="form-check-label" for="q9">
+                            Strongly agree
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="Description">
+                    Additional Suggestions/ Comments about the course teacher.
+                </label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="Description" type="text" name="Description" cols="70" rows="6" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="form-group">
+            <div class="col-sm-10">
+                <a href="/"><button type="submit" class="btn btn-success">Cancel</button></a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-10">
+                <a href="/contact"><button type="submit" class="btn btn-success">Contact Us</button></a>
+            </div>
+        </div>
+        <footer>
+            <h4 style="text-align: center;">Copyright © 2021 Kiran Raut. All rights reserved.</h4>
+        </footer>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>
